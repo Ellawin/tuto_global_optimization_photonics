@@ -37,3 +37,8 @@ We demonstrate how to do global optimization of the geometry of multi-layered ph
   - `04_simple_2Dgrating_optimization_with_Nevergrad.ipynb`: Tutorial setting up the ellipsometry problem ([link to google colab version](https://drive.google.com/file/d/1Nz_UDWTI0xIuYwx2KkTJHQI51xbdGUJy/view?usp=sharing))
   
   - `05_simple_3D_plasmonic_nanostructure_directional.ipynb`: Algorithm benchmark on the ellipsometry problem ([link to google colab version](https://colab.research.google.com/drive/1kDp0o1Mqaq-bdf8RoxCH6ALZhGukyHNz?usp=sharing))
+
+## Benchmark results
+
+The figures from our paper *An illustrated tutorial on global optimization in nanophotonics* by P. Bennet et al. ([arXiv:2309.09760](https://arxiv.org/abs/2309.09760)) are generated with the 'Paper_results.py' program. 
+
