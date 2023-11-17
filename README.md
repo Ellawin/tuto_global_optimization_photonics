@@ -21,7 +21,7 @@ We demonstrate how to do global optimization of the geometry of multi-layered ph
   
   3. Design of a sophisticated antireflection coating to optimize solar absorption in a photovoltaic solar cell.
   
-  4. Optimization of a 2D grating for minimum specular reflectance in the first diffraction order at a given wavelength.
+  4. Optimization of a 2D grating for minimum specular reflectance at a given wavelength.
   
   5. Design of a plasmonic nanostructure for directional emission from a local emitter.
 
