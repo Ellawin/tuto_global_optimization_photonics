@@ -44,7 +44,7 @@ You can run the Notebook directly on your own computer, or you can connect to th
   
   - `07_simple_3D_plasmonic_nanostructure_directional.ipynb`: Tutorial on setting up the 3D nanoantenna problem ([link to google colab version](https://drive.google.com/file/d/1HVzmNqhjNy-XLUP_Qwq8g4jkrhxGpjU2/view?usp=sharing)). In this example we reproduce the optimization of a directional plasmonic nanoantenna that couples with a local quantum emitter, and steers the light towards a defined solid angle as described in [Wiecha et al. Opt. Express 27, pp. 29069, (2019)](https://doi.org/10.1364/OE.27.029069). The optimization target is to maximize the ratio of emission towards a specific target solid angle and emission towards the rest of the sphere surface. The emitting system is a local oscillating dipole at fixed wavelength (800 nm), representing for example a quantum dot, coupled to a gold nanostructure, for simplicity of the tutorial, in vacuum. The optimization acts on the geometry of the gold nanostructure, which is constituted of 40 small gold cubes, each of 40x40x40 nm^3. Their X, Y positions are discretized in steps of these blocks, and subject to the optimizer. 
 
-  ### 3D nanoantenna case
+## 3D nanoantenna problem
 
   This tutorial aims at reproducing the general trend in [Wiecha et al. Opt. Express 27, pp. 29069, (2019)](https://doi.org/10.1364/OE.27.029069). However, for runtime and readibility of the notebook, we keep the configuration simpler. The nanoantenna is made from smaller and fewer gold elements, the antenna is placed in a homogeneous environment (air) and the emitter is *above* the antenna, such that we do not need to add a forbidden zone constraint in the material positioning. 
 
@@ -54,9 +54,11 @@ You can run the Notebook directly on your own computer, or you can connect to th
 
   - `10_benchmark_3Dnanostructure_optimization.ipynb` : This tutorial aims at reproducing the trends in [Wiecha et al. Opt. Express 27, pp. 29069, (2019)](https://doi.org/10.1364/OE.27.029069). Here we reload the results calculated by the MPI-parallelized script (Python file `08_benchmark_3Dnanostructure_MPI.py`). The multiple optimization runs need to be done via MPI first. PLEASE RUN THE '08' PROGRAM BEFORE TRYING TO RUN THIS NOTEBOOK.
 
+  Caution: pyGDM uses numba, as a result the MPI script uses pickle with some JIT-compiled numba objects to save the results. Reloading these objects requires to use the exactly same python installation as used for generation of the simulations, otherwise difficult to interpret errors can occur.
+
 
 ## Benchmark results
 
-The figures from our paper *An illustrated tutorial on global optimization in nanophotonics* by P. Bennet et al. ([arXiv:2309.09760](https://arxiv.org/abs/2309.09760)) are generated with the 'Paper_results.py' program. 
+The figures from our paper *An illustrated tutorial on global optimization in nanophotonics* by P. Bennet et al. ([arXiv:2309.09760](https://arxiv.org/abs/2309.09760)) are generated with the '11.1_Paper_results.py' program. We also provide a Jupyter Notebook version of this program `12_paper_results.ipynb`.
 
 
